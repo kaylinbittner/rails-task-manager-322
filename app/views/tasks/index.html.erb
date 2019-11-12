@@ -1,2 +1,20 @@
-<h1>Tasks#index</h1>
-<p>Find me in app/views/tasks/index.html.erb</p>
+<h1>TASKS</h1>
+  <div class="container">
+    <% @tasks.each do |task| %>
+      <h2 class="header">
+        <% if task.completed? %>
+          ✅
+        <% else %>
+          ⬜️
+        <% end %>
+        <%= link_to task.title, task_path(task) %>
+        <%= link_to "❌", task_path(task.id),
+          method: :delete,
+          data: { confirm: "Are you sure?" },
+          class: "index" %>
+      </h2>
+    <% end %>
+
+<%= link_to "Create New Task", new_task_path, class: "link" %>
+
+ </div>

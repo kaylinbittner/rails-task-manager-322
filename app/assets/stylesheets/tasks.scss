@@ -1,3 +1,102 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway:400,700&display=swap');
+
+body {
+  background-color: #EEE0CB;
+}
+
+h1 {
+  font-family: 'Raleway';
+  font-size: 48px;
+  font-weight: 700;
+  color: #B7CECE;
+  text-align: center;
+  border-bottom: #B7CECE solid 4px
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  font-size: 20px;
+  height: 32px;
+  font-family: 'Open Sans Condensed';
+  color: #50514F;
+}
+
+input {
+  height: 24px;
+  border-radius: 4px;
+}
+
+.form {
+  margin-bottom: 24px;
+  font-family: 'Open Sans Condensed';
+  font-size: 24px;
+  color: #50514F;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.details {
+  font-family: 'Open Sans Condensed';
+  font-size: 24px;
+  color: #50514F;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.header {
+  font-family: 'Raleway';
+  font-weight: 400;
+
+  :hover {
+    font-weight: 700;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+   :last-child {
+    margin-bottom: 36px;
+  }
+}
+
+.header > a {
+  text-decoration: none;
+  color: #50514F;
+  margin: 0px 0px 16px 0px;
+  padding-left: 12px;
+}
+
+.index {
+  padding-left: 12px;
+}
+
+
+.link {
+  margin-top: 8px;
+  font-family: 'Open Sans Condensed';
+  font-size: 24px;
+  color: #50514F;
+  text-decoration: none;
+  border: #50514F solid 2px;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.link:hover {
+  color: white;
+  background-color: #50514F;
+}
